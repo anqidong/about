@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en-CA">
+<head><title>Anqi Dong</title>
+<meta charset="utf-8" />
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans:400,400i,700');
+
+table {
+    width: 100%;
+}
+
+h1, h2, h3, h4, p, div, table, tbody, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Alegreya', 'Garamond', serif;
+    font-weight: 700;
+
+    break-after: avoid;
+}
+
+table#contact th:not(:first-child) {
+    text-align: right;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    line-height: 1.4;
+    
+    -webkit-font-variant-ligatures: normal;
+    font-variant-ligatures: normal;
+ 
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    font-feature-settings: "kern";
+    font-kerning: normal;
+
+    text-rendering: optimizeLegibility;
+}
+
+.subtext {
+    font-size: 0.8em;
+}
+
+.date {
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    margin-bottom: 0.2em;
+    
+    -webkit-font-feature-settings: 'tnum';
+    -moz-font-feature-settings: 'tnum';
+    -ms-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    font-variant-numeric: tabular-nums;
+}
+
+ul {
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+ol.simple, ul.simple {
+    margin: 0;
+    padding: 0;
+}
+
+ol.simple > li, ul.simple > li {
+    list-style: none;
+    text-align: justify;
+}
+
+li + li, li ul, li ol {
+    margin-top: 0.05em;
+}
+
+li { break-inside: avoid; }
+li:has(li) { break-inside: auto; }
+
+abbr {
+    border-bottom: 1px dashed inherit;
+}
+
+h2 {
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    
+    margin: 0.35em 0;
+    border-bottom: 1px solid #bbb;
+}
+
+h2:first-child {
+	margin-top: 0;
+}
+
+.details strong{
+    color: #037b07;
+    background-color: #fefeff;
+
+    /* letter-spacing: 0.012em; */
+    font-weight: inherit;
+
+    /* border: 1px #f4f4f4 solid; */
+}
+
+.block-item, .clear-hack {
+    clear: both;
+}
+
+#contact {
+    border-bottom: 3pt double black;
+    padding-bottom: 0.2em;
+    margin-bottom: 1em;
+    
+    letter-spacing: 0.02em;
+}
+
+#contact h1 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+}
+
+#contact p {
+    padding: 0;
+    margin: 0 0;
+}
+
+.prose {
+    text-align: justify;
+}
+
+p.prose {
+    margin: 0.2em 0;
+}
+
+.force-inline * {
+    display: inline;
+}
+
+td, th {
+    text-align: left;
+    vertical-align: bottom;
+    font-weight: 400;
+}
+
+table#contact td, table#contact th {
+    break-inside: avoid;
+}
+
+#main-content {
+	columns: 2 20em;
+	column-gap: 3rem;
+}
+
+div.major-section {
+	break-inside: avoid;
+}
+
+/* .trim { color: red; } */
+
+@media screen {
+    body {
+        font-size: 12pt;
+
+        min-width: 24em;
+        max-width: 56em;
+        margin: 0 auto;
+        padding: 2em 3em;
+        color: #1e1e1e;
+        background-color: #fcf0f9;
+   }
+
+    a {
+        color: #003e77;
+        text-decoration: underline;
+    }
+
+    a:hover, a:focus, a:active {
+        text-decoration: underline double;
+    }
+}
+
+@media print {
+    body {
+        font-size: 10.5pt;
+
+        color: black;
+        background-color: white;
+    }
+
+    a {
+        color: #028;
+        text-decoration: underline;
+
+        /*
+        text-decoration: none;
+        border: 0 none;
+         */
+    }
+
+    abbr {
+        text-decoration: none;
+        border: 0 none;
+    }
+
+    abbr::after {
+        content: " [" attr(title) "]";
+        font-size: 75%;
+    }
+
+    abbr.remind::after {
+        content: none;
+    }
+
+    .a11y-off {
+        display: none;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<table id="contact">
+    <tr>
+        <th><h1>Anqi Dong</h1></th>
+        <th>
+		    <p>LinkedIn: <a href="https://www.linkedin.com/in/anqi-dong-is/">linkedin.com/in/anqi-dong-is</a>
+            <p>Permalink: <a href="https://anqidong.github.io/about/">anqidong.github.io/about</a>
+        </th>
+    </tr>
+</table>
+
+<div id="main-content">
+
+<div id="cv" class="major-section">
+    <h2>Résumé</h2>
+    <ul>
+        <li><a href="anqi-dong_resume.pdf">Main résumé</a>
+    </ul>
+</div>
+
+<div id="oss" class="major-section">
+    <h2>Open-source contributions</h2>
+    <ul>
+        <li><a href="https://github.com/anqidong">Personal GitHub profile</a>
+		<li><a href="https://github.com/anqid-g">Work (Google) GitHub profile</a>
+    </ul>
+</div>
+
+</div>
+
+</body>
+</html>
